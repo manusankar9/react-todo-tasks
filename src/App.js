@@ -7,8 +7,7 @@ class App extends Component{
 
     state = {
         id:0,
-        data:[
-        ]
+        data:[]
     }
     
     addItem = (item)=>{
