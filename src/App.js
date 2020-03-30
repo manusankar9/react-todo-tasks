@@ -1,7 +1,9 @@
 import React from 'react'
 import { Component } from 'react';
-import DelTodo from './todoList.js'
-import AddTodo from './addTodo.js'
+import TodoApp from './React-redux-todo/Components/Title'
+import TaskBar from './React-redux-todo/Components/TaskBar'
+import TaskList from './React-redux-todo/Components/TaskList'
+import DropDown from './DropDown/components'
 
 class App extends Component{
 
@@ -28,9 +30,10 @@ class App extends Component{
 
     render(){
         return (<div>
-            <h3>TODO APP</h3>
-            <DelTodo state = {this.state} deleteItem = {this.deleteItem}/>
-            <AddTodo addItem = {this.addItem} />
+            <TodoApp />
+            <TaskBar />
+            <TaskList />
+            <DropDown />
             </div>)
     }
 }
