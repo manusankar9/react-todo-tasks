@@ -7,27 +7,6 @@ import DropDown from './DropDown/components'
 
 class App extends Component{
 
-    state = {
-        id:0,
-        data:[]
-    }
-    
-    addItem = (item)=>{
-        item.id = this.state.id;
-        
-        let data =  [...this.state.data,item];
-
-       this.setState({data,id:this.state.id+1})
-
-    }
-
-    deleteItem = (id)=>{
-        let data = this.state.data.filter(item=>item.id !== id);
-        console.log(data)
-        this.setState({...this.state,data})
-
-    }
-
     render(){
         return (<div>
             <TodoApp />
