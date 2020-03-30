@@ -1,8 +1,9 @@
 import React from 'react'
 import { Component } from 'react';
-import TodoApp from './Components/Title'
-import TaskBar from './Components/TaskBar'
-import TaskList from './Components/TaskList'
+import TodoApp from './React-redux-todo/Components/Title'
+import TaskBar from './React-redux-todo/Components/TaskBar'
+import TaskList from './React-redux-todo/Components/TaskList'
+import DropDown from './DropDown/components'
 
 class App extends Component{
 
@@ -11,6 +12,7 @@ class App extends Component{
             <TodoApp />
             <TaskBar />
             <TaskList />
+            <DropDown />
             </div>)
     }
 }
