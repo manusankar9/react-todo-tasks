@@ -3,7 +3,9 @@ import { Component } from 'react';
 import TodoApp from './React-redux-todo/Components/Title'
 import TaskBar from './React-redux-todo/Components/TaskBar'
 import TaskList from './React-redux-todo/Components/TaskList'
-import DropDown from './DropDown/components'
+import DropDown from './DropDown/components';
+import EventCalender from './fullCalender/Components/calender-filters'
+
 
 class App extends Component{
 
@@ -13,6 +15,7 @@ class App extends Component{
             <TaskBar />
             <TaskList />
             <DropDown />
+            <EventCalender />
             </div>)
     }
 }
